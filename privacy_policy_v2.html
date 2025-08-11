@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Quran App</title>
+    <title>Privacy Policy - Mushaf Al-Umma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #2c5e92;
-            --secondary: #3498db;
-            --accent: #27ae60;
-            --light: #f8f9fa;
-            --dark: #2c3e50;
-            --text: #333;
-            --border: #e0e0e0;
+            --primary: #1a472a;
+            --secondary: #2e6a4a;
+            --accent: #c9a145;
+            --light: #f5f5f0;
+            --dark: #0d2818;
+            --text: #333333;
+            --border: #d4d4c4;
         }
         
         * {
@@ -22,27 +23,28 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.7;
             color: var(--text);
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            background: linear-gradient(135deg, #f0f4e8 0%, #e8f0e0 100%);
             min-height: 100vh;
-            padding: 20px;
+            padding: 30px;
         }
         
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
             background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
             overflow: hidden;
+            border: 1px solid var(--border);
         }
         
         header {
-            background: var(--primary);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: white;
-            padding: 40px 30px;
+            padding: 50px 40px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -51,155 +53,171 @@
         header::before {
             content: "";
             position: absolute;
-            top: -50px;
+            top: -100px;
             left: -50px;
-            width: 200px;
-            height: 200px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M20,20 Q40,5 60,20 T100,20 Q85,40 100,60 T100,100 Q60,85 20,100 T0,100 Q5,60 0,20 T20,20' fill='none' stroke='rgba(255,255,255,0.08)' stroke-width='2'/%3E%3C/svg%3E");
+            opacity: 0.3;
         }
         
-        header::after {
-            content: "";
-            position: absolute;
-            bottom: -80px;
-            right: -30px;
-            width: 150px;
-            height: 150px;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 50%;
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
         }
         
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 700px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .last-updated {
-            background: var(--accent);
-            padding: 8px 20px;
-            display: inline-block;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            margin-top: 15px;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .app-icon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
-            border-radius: 20px;
-            margin: 0 auto 20px;
+        .logo-inner {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--accent) 0%, #d4b65c 100%);
+            border-radius: 24px;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-            z-index: 2;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border: 3px solid rgba(255, 255, 255, 0.3);
         }
         
-        .app-icon::before {
-            content: "ٱ";
+        .logo-inner::before {
+            content: "ٓ";
             font-family: Arial, sans-serif;
-            font-size: 3rem;
+            font-size: 4.5rem;
             color: white;
-            transform: rotate(20deg);
+            font-weight: bold;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 25px;
+            font-weight: 300;
+        }
+        
+        .last-updated {
+            background: var(--accent);
+            padding: 10px 25px;
+            display: inline-block;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            margin-top: 15px;
+            color: var(--dark);
+            font-weight: 500;
         }
         
         .content {
-            padding: 40px;
+            padding: 50px;
         }
         
-        .card {
-            background: var(--light);
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 30px;
-            border-left: 4px solid var(--accent);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
-            transition: transform 0.3s ease;
+        .section {
+            margin-bottom: 45px;
+            padding-bottom: 40px;
+            border-bottom: 1px dashed var(--border);
         }
         
-        .card:hover {
-            transform: translateY(-5px);
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
         
         h2 {
             color: var(--primary);
-            margin-bottom: 15px;
-            font-size: 1.6rem;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
             display: flex;
             align-items: center;
+            font-weight: 600;
         }
         
         h2 i {
-            margin-right: 12px;
-            background: var(--secondary);
-            width: 40px;
-            height: 40px;
+            margin-right: 15px;
+            background: var(--accent);
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+        
+        p {
+            margin-bottom: 18px;
+            font-size: 1.05rem;
         }
         
         ul {
-            padding-left: 25px;
-            margin: 15px 0;
+            padding-left: 30px;
+            margin: 20px 0;
         }
         
         li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent);
+            font-size: 1.4rem;
         }
         
         .highlight {
-            background: rgba(39, 174, 96, 0.1);
-            padding: 5px 10px;
-            border-radius: 5px;
+            background: rgba(201, 161, 69, 0.1);
+            padding: 8px 15px;
+            border-radius: 6px;
             font-weight: 600;
-            color: var(--accent);
+            color: var(--primary);
+            border-left: 3px solid var(--accent);
+            display: inline-block;
+            margin: 5px 0;
         }
         
         .contact {
             background: var(--dark);
             color: white;
-            padding: 40px;
+            padding: 50px 40px;
             text-align: center;
         }
         
         .contact h2 {
             color: white;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            justify-content: center;
         }
         
         .contact-info {
             display: inline-block;
             background: rgba(255, 255, 255, 0.1);
-            padding: 15px 30px;
-            border-radius: 10px;
-            font-size: 1.1rem;
+            padding: 20px 35px;
+            border-radius: 12px;
+            font-size: 1.15rem;
             margin-top: 10px;
+            max-width: 600px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
         }
         
         .contact a {
-            color: #64b5f6;
+            color: #e9c46a;
             text-decoration: none;
             transition: color 0.3s;
+            font-weight: 500;
         }
         
         .contact a:hover {
@@ -209,27 +227,65 @@
         
         .footer {
             text-align: center;
-            padding: 20px;
-            color: #7f8c8d;
-            font-size: 0.9rem;
+            padding: 25px;
+            color: #7a7a6d;
+            font-size: 0.95rem;
+            background: var(--light);
             border-top: 1px solid var(--border);
+        }
+        
+        .arabic-text {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin: 30px 0;
+            text-align: center;
+            line-height: 2.5;
         }
         
         @media (max-width: 768px) {
             .content {
-                padding: 25px 20px;
+                padding: 35px 25px;
             }
             
             header {
-                padding: 30px 20px;
+                padding: 40px 25px;
             }
             
             h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
             
             .contact {
-                padding: 30px 20px;
+                padding: 40px 25px;
+            }
+            
+            .arabic-text {
+                font-size: 1.5rem;
+                line-height: 2;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.9rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .logo-inner {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .logo-inner::before {
+                font-size: 3.5rem;
             }
         }
     </style>
@@ -237,89 +293,97 @@
 <body>
     <div class="container">
         <header>
-            <div class="app-icon"></div>
-            <h1>Privacy Policy for Quran App</h1>
-            <p class="subtitle">This privacy policy applies to our Quran reading application that collects no user data</p>
-            <div class="last-updated">Last Updated: August 11, 2025</div>
+            <div class="logo">
+                <div class="logo-inner"></div>
+            </div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">For Mushaf Al-Umma - The Noble Quran Application</p>
+            <div class="last-updated">Effective Date: August 11, 2025</div>
         </header>
         
         <div class="content">
-            <div class="card">
-                <h2><i>✓</i> No Data Collection</h2>
-                <p>Our Quran application is designed with privacy as a core principle. We want to assure you that:</p>
+            <div class="arabic-text">
+                ﴿وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ﴾
+            </div>
+            
+            <div class="section">
+                <h2><i class="fas fa-database"></i> Data Collection Policy</h2>
+                <p>Mushaf Al-Umma is designed with a fundamental commitment to user privacy. We adhere to a strict no-data-collection policy:</p>
                 <ul>
-                    <li>The application <span class="highlight">does not collect, store, or transmit</span> any personal or usage data</li>
-                    <li>We <span class="highlight">do not access</span> your device's Internet Protocol address (IP address)</li>
-                    <li>We <span class="highlight">do not track</span> which pages you visit or how much time you spend in the app</li>
-                    <li>We <span class="highlight">do not gather</span> any information about your device or operating system</li>
-                    <li>We <span class="highlight">do not request or store</span> any personally identifiable information</li>
+                    <li>The application <span class="highlight">does not collect, store, or transmit</span> any personal information or usage data</li>
+                    <li>We <span class="highlight">do not access</span> your device's identifiers, location, or network information</li>
+                    <li>No analytics or tracking mechanisms are implemented within the application</li>
+                    <li>User interactions with the Quran text are <span class="highlight">entirely private and local</span> to your device</li>
                 </ul>
             </div>
             
-            <div class="card">
-                <h2><i>✓</i> Local Data Storage</h2>
-                <p>The application functions entirely offline after initial setup:</p>
+            <div class="section">
+                <h2><i class="fas fa-laptop-house"></i> Local Data Storage</h2>
+                <p>Mushaf Al-Umma operates as a self-contained application with all data stored locally:</p>
                 <ul>
-                    <li>The Quran text is downloaded to your device's <span class="highlight">local Realm database</span> during the first launch</li>
-                    <li>All data including bookmarks, reading progress, and preferences are stored <span class="highlight">locally on your device</span></li>
-                    <li>This locally stored data <span class="highlight">never leaves your device</span> and is not accessible to us or any third parties</li>
-                    <li>You can delete all app data at any time by uninstalling the application</li>
+                    <li>Quran text is downloaded to your device's <span class="highlight">secure Realm database</span> during initial setup</li>
+                    <li>All personal usage data (bookmarks, reading progress, notes) is stored exclusively on your device</li>
+                    <li>This locally stored data <span class="highlight">never leaves your device</span> and is inaccessible to external parties</li>
+                    <li>Data remains available offline and can be permanently deleted through standard application uninstallation</li>
                 </ul>
             </div>
             
-            <div class="card">
-                <h2><i>✓</i> No Third-Party Services</h2>
-                <p>To ensure maximum privacy protection:</p>
+            <div class="section">
+                <h2><i class="fas fa-shield-alt"></i> Security & Privacy Safeguards</h2>
+                <p>We implement multiple layers of protection for your Quran reading experience:</p>
                 <ul>
-                    <li>The application <span class="highlight">does not integrate</span> with any analytics services</li>
-                    <li>There are <span class="highlight">no advertising networks</span> or tracking libraries included</li>
-                    <li>We <span class="highlight">do not share</span> any data with third parties because we don't collect any</li>
-                    <li>The application <span class="highlight">does not require internet access</span> after the initial download of Quran text</li>
+                    <li>Quran text is downloaded via <span class="highlight">encrypted HTTPS connection</span> from trusted sources</li>
+                    <li>Local database employs <span class="highlight">industry-standard encryption</span> for sensitive user annotations</li>
+                    <li>The application requests <span class="highlight">no unnecessary permissions</span> on your device</li>
+                    <li>Regular security audits ensure the application maintains its privacy-first design</li>
                 </ul>
             </div>
             
-            <div class="card">
-                <h2><i>✓</i> Children's Privacy</h2>
-                <p>Our application is safe for users of all ages:</p>
+            <div class="section">
+                <h2><i class="fas fa-child"></i> Children's Privacy</h2>
+                <p>Mushaf Al-Umma is suitable for users of all ages:</p>
                 <ul>
                     <li>We <span class="highlight">do not knowingly interact with</span> or collect data from children under 13</li>
-                    <li>The application contains <span class="highlight">no social features</span> or communication capabilities</li>
-                    <li>Parents can feel safe allowing children to use this application as it collects no data and has no external interactions</li>
+                    <li>The application contains <span class="highlight">no communication features</span> or external interactions</li>
+                    <li>Parents can confidently allow children to use this application knowing their privacy is protected</li>
                 </ul>
             </div>
             
-            <div class="card">
-                <h2><i>✓</i> Security</h2>
-                <p>While we don't collect any data, we still prioritize security:</p>
+            <div class="section">
+                <h2><i class="fas fa-exchange-alt"></i> Third-Party Services</h2>
+                <p>To maintain absolute privacy, Mushaf Al-Umma contains no external integrations:</p>
                 <ul>
-                    <li>All Quran text is downloaded via <span class="highlight">secure HTTPS connection</span></li>
-                    <li>Local data is stored in an encrypted Realm database for protection</li>
-                    <li>The application requests <span class="highlight">no unnecessary permissions</span> on your device</li>
+                    <li><span class="highlight">No analytics services</span> (Google Analytics, Firebase, etc.) are integrated</li>
+                    <li><span class="highlight">No advertising networks</span> are included in the application</li>
+                    <li>The application <span class="highlight">does not require internet access</span> after initial Quran text download</li>
+                    <li>We maintain <span class="highlight">no data-sharing relationships</span> with third parties</li>
                 </ul>
             </div>
             
-            <div class="card">
-                <h2><i>✓</i> Policy Changes</h2>
-                <p>We are committed to maintaining a no-data-collection policy:</p>
+            <div class="section">
+                <h2><i class="fas fa-sync-alt"></i> Policy Updates</h2>
+                <p>Our commitment to privacy remains unwavering:</p>
                 <ul>
-                    <li>Any changes to this privacy policy will be clearly communicated within the application</li>
+                    <li>Any changes to this policy will be clearly communicated within the application</li>
                     <li>We will <span class="highlight">never introduce data collection</span> without explicit user consent</li>
-                    <li>This privacy policy may be updated occasionally to reflect any changes in regulations</li>
+                    <li>This privacy policy may be updated to comply with regulatory requirements</li>
                 </ul>
             </div>
         </div>
         
         <div class="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions about this privacy policy or our application:</p>
+            <h2><i class="fas fa-envelope"></i> Contact Information</h2>
+            <p>For inquiries regarding this privacy policy or the Mushaf Al-Umma application:</p>
             <div class="contact-info">
                 <p><strong>Hossam Waziry</strong><br>
+                Developer & Service Provider<br>
                 Email: <a href="mailto:7ossam.gamal@gmail.com">7ossam.gamal@gmail.com</a></p>
             </div>
         </div>
         
         <div class="footer">
-            <p>This privacy policy applies only to our Quran application. Continued use of the app signifies acceptance of this policy.</p>
+            <p>Mushaf Al-Umma - Preserving the tradition of Quranic recitation in the digital age</p>
+            <p>© 2025 Mushaf Al-Umma. All rights reserved.</p>
         </div>
     </div>
 </body>
